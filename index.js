@@ -47,4 +47,29 @@ function deleteWord() {
 // Start typing
 type();
 
-// Skills section 
+// Project image slider
+
+const slides = document.querySelectorAll(".slide");
+let current = 0;
+
+function show() {
+  slides.forEach(s => s.classList.remove("active"));
+  slides[current].classList.add("active");
+  current = (current + 1) % slides.length;
+}
+
+show();
+setInterval(show, 4000);
+
+const todo_slides = document.querySelectorAll(".todo-slide");
+let current_todo = 0;
+
+function show_todo() {
+  todo_slides.forEach(s => s.classList.remove("active"));
+  todo_slides[current_todo].classList.add("active");
+  current_todo = (current_todo + 1) % todo_slides.length;
+}
+
+show_todo();
+setInterval(show_todo, 3000);
+

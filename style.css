@@ -58,3 +58,20 @@
 .skill-card p {
   @apply font-semibold text-current;
 } */
+
+.slide {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+.slide.active {
+  opacity: 1;
+}
+
+.todo-slide {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.todo-slide.active {
+  opacity: 1;
+}
